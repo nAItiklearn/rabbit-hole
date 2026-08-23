@@ -2,5 +2,5 @@
 A website where you enter the world with basically no agenda and emerge three hours later knowing why ancient Roman concrete is weird.
 
 currently making 
-24th august
--made the structure for rabbit hole today
+24th august 2026
+-made the structure for rabbit hole today.

@@ -97,3 +97,41 @@ category-card:hover{
     text-align: left;
     box-shadow: 8px 8px 8px #4a3022;
 }
+.level-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.level-header h3{
+    font-size:24px;
+}
+.level-link{
+    color:#4a3022
+}
+.level-content h4{
+    font-size:30px;
+    margin-bottom:15px;
+}
+.level-content p{
+    font-size:20px;
+    line-height:1.6px;
+}
+.explore-check{
+    display:block;
+    margin:30px;
+    font-size: 18px;
+}
+.next-button{
+    display:block;
+    margin:25px auto 0;
+    padding:14px 24px;
+    background: #f5e2c0;
+    border: 2px solid #4a3022;
+    cursor:pointer;
+    font-size: 16px;
+}
+.next-button:disabled{
+    opacity: 0.4;
+    cursor:not-allowed;
+}

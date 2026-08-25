@@ -81,3 +81,19 @@ category-card:hover{
 .rabbit-image{
     margin-top:60px
 }
+.rabbit-result{
+    width:min(900px, 90%);
+    margin:60px auto;
+    text-align: center;
+}
+.rabbit-result h2{
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+.level-box{
+    background: #f3dfbc;
+    border:3px solid #4a3022;
+    padding:30px;
+    text-align: left;
+    box-shadow: 8px 8px 8px #4a3022;
+}

@@ -6,10 +6,12 @@
 
     <title>Rabbit Hole</title>
 
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     </head>
     
     <body>
+        <div class="page-overlay"></div>
         <header class="top-bar">
             <div class="logo">
                  🐇 Rabbit Hole
@@ -18,37 +20,44 @@
                  ☀ / 🌙
             </button>
         </header>
+        
         <main class="home-page">
-            <h1 class="main-title">
-                WHERE YOU WANNA GO??
-            </h1>
-            <div class="search-area">
-                <div class="fake-search">
-                    think of something weird..
+            <section class="hero">
+                <h1 class="main-title">
+                    WHERE SHOULD WE FALL?
+                </h1>
+                <div class="search-area">
+                    <div class="fake-search">
+                        give me something weird..
+                    </div>
+                    <button class="surprise-button">
+                        🎲 SURPRISE ME
+                    </button>      
                 </div>
-                
-            </div>
-            <section class="category-area" >
-                <div id="rabbit-result" class="rabbit-result"></div>
-                <button class="category-card">
-                    <span>HISTROY ROOTS </span>
+            </section>
+            <section class="category-area">
+                <button class="category-card history-card" id="history-button">
+                    <span class="category-icon">🌲</span>
+                    <span>HISTORY WOODS</span>
                 </button>
-                <button class="category-card">
-                    <span>CINEMA</span>
+                <button class="category-card cinema-card" id="cinema-button">
+                    <span class="category-icon">🎬</span>
+                    <span>CINEMA CAVE</span>
                 </button>
-                <button class="category-card">
+                <button class="category-card internet-card" id="internet-button">
+                    <span class="category-icon">🌐</span>
                     <span>INTERNET</span>
-                </button> 
-                <br> <br>
-
-                <button class ="surprise-button">
-                    SURPRISE ME🎲 
                 </button>
             </section>
-            <div class="rabbit-image">
-               <!-- rabboit pixel design-->
-            </div>      
-          </main>
-          <script src="script.js"></script>
+            <!-- RABBIT START POSITION-->
+             <div class="rabbit-container">
+                <div class="rabbit-placeholder">🐇</div>
+
+             </div>
+
+             <div id="rabbit-result" class="rabbit-result">
+             </div>
+             
+        </main>
     </body>
 </html>

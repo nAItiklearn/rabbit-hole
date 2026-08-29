@@ -166,32 +166,86 @@ const rabbitHoles = [
         ]
     },
     {
-        category:"Cinema",
-        title:"The Zodiac Killer & Hollywood",
-        level:[{
-            title:"The Hook",
-            content:"A serial killer who taunted police with cryptic letters, starred in his own media circus, and inspired one of the greatest crime thrillers ever made. He murdered at least five people, sent ciphers to newspapers, and vanished—leaving behind America's most famous unsolved case. Hollywood couldn't resist.",
-            link:"https://en.wikipedia.org/wiki/Zodiac_Killer"
-        },
-        {
-            title:"What is this shit",
-            content:"Between 1968–1973, the Zodiac Killer terrorized Northern California, claiming up to 37 victims. He sent four ciphers to Bay Area newspapers; three were solved, but one (Z340) baffled cryptographers for 51 years until 2020. David Fincher's 2007 film 'Zodiac' meticulously recreated the investigation, starring Jake Gyllenhaal and Mark Ruffalo. The killer's identity remains unknown despite hundreds of suspects.",
-            link:"https://www.popsci.com/technology/zodiac-letter-decode/"
-
-        },
-        {
-            title:"the Weird Part",
-            content:"The Zodiac's letters were theatrical performances—he demanded they be printed on front pages, signed with a crosshair symbol, and included details only the killer would know. One cipher contained a threat to 'blast a school bus full of children.' The Z340 solution revealed a disturbing manifesto about collecting slaves for the afterlife. Fincher's film became obsessed with accuracy, even recreating the exact street corners where murders occurred.",
-            link:"https://ciphermuseum.com/ciphers/zodiac.html"
-        },
-        {
-            title:"Go deeper",
-            content:"Read the full Z340 cipher solution by David Oranchak's team, explore the FBI's official case files, or watch Fincher's film with commentary on its forensic accuracy. The case inspired countless documentaries, podcasts, and even a video game. New suspects still emerge—most recently, a 2021 book claimed a dead man named Gary Francis Poste was the Zodiac, but DNA evidence remains inconclusive.",
-            link:"https://arxiv.org/abs/2403.17350"
-        }
-    ]
+         category:"cinema",
+    id:"cine",
+    title:"The Zodiac Killer & Hollywood",
+    level:[{
+        title:"the hook",
+        content:"A serial killer who taunted police with cryptic letters, starred in his own media circus, and inspired one of the greatest crime thrillers ever made. He murdered at least 5 people, sent ciphers to newspapers, and vanished—leaving behind America's most famous unsolved case. Hollywood couldn't resist *obviously*",
+        link:"https://en.wikipedia.org/wiki/Zodiac_Killer"
     },
+    {
+        title:"what is this shit??",
+        content:"Between 1968-1973, the Zodiac Killer terrorized Northern California, claiming up to 37 victims. He sent 4 ciphers to Bay Area newspapers; 3 were solved, but one (Z340) baffled cryptographers for 51 YEARS until 2020. David Fincher's 2007 film 'Zodiac' meticulously recreated the investigation with Jake Gyllenhaal and Mark Ruffalo. The killer's identity? Still unknown despite hundreds of suspects.",
+        link:"https://www.popsci.com/technology/zodiac-letter-decode/"
+    },
+    {
+        title:"the weird part",
+        content:"The Zodiac's letters were theatrical performances—he demanded they be printed on front pages, signed with a crosshair symbol, and included details only the killer would know. One cipher contained a threat to 'blast a school bus full of children.' The Z340 solution revealed a disturbing manifesto about collecting slaves for the afterlife. Fincher's film became so obsessed with accuracy they recreated the exact street corners where murders occurred *that's dedication*",
+        link:"https://ciphermuseum.com/ciphers/zodiac.html"
+    },
+    {
+        title:"go deeper",
+        content:"Read the full Z340 cipher solution by David Oranchak's team, explore the FBI's official case files, or watch Fincher's film with commentary on its forensic accuracy. The case inspired countless documentaries, podcasts, and even a video game. New suspects still emerge—most recently a 2021 book claimed a dead man named Gary Francis Poste was the Zodiac, but DNA evidence remains inconclusive *mystery continues*",
+        link:"https://arxiv.org/abs/2403.17350"
+    }
+    ]
+},
+{
+    category:"cinema",
+    id:"cine",
+    title:"Stanley Kubrick's Hidden Codes",
+    level:[{
+        title:"the hook",
+        content:"A perfectionist genius who hid secret messages in every frame. Stanley Kubrick's films are layered with symbolism, numerology, and occult references so dense that fans still decode them decades later. From the monolith in '2001' to the masked orgy in 'Eyes Wide Shut,' nothing was accidental. Or was it? *probably was tbh*",
+        link:"https://whatculture.com/film/10-not-so-obvious-messages-with-deeper-meanings-in-stanley-kubricks-films"
+    },
+    {
+        title:"what is this shit??",
+        content:"Kubrick spent years crafting each film, obsessing over details most viewers never notice. '2001: A Space Odyssey' contains allegories about human evolution and AI. 'The Shining' is packed with impossible architecture and hidden references to Native American genocide. 'Eyes Wide Shut' features pentagrams, rainbow symbolism, and critiques of elite secret societies. His final film was released just days before his death in 1999 *coincidence?*",
+        link:"https://www.newyorker.com/magazine/2018/04/23/2001-a-space-odyssey-what-it-means-and-how-it-was-made"
+    },
+    {
+        title:"the weird part",
+        content:"Fans claim Kubrick encoded his own death in 'Eyes Wide Shut'—the film's release date, his funeral, even the number 1999 appears repeatedly. 'The Shining' supposedly contains a confession about faking the Apollo moon landing (documented in 'Room 237'). The 'Kubrick Stare'—his signature head-tilt close-up—appears in nearly every film. Some believe he was initiated into secret societies and used his films as coded messages to other members *conspiracy level: maximum*",
+        link:"https://boydrinksink.com/eyes-wide-shut-hidden-in-plain-sight"
+    },
+    {
+        title:"go deeper",
+        content:"Watch 'Room 237,' the documentary analyzing 80+ hidden meanings in 'The Shining.' Read Carolin Ruwe's 'Symbols in Stanley Kubrick's Movie Eyes Wide Shut.' Explore the 'Kubrick Symposium' academic papers. Or dive into Reddit threads where fans still debate whether the monolith represents God, technology, or cinema itself. The code-breaking never stops *join the cult*",
+        link:"https://www.cracked.com/image-pictofact-6598-15-shining-easter-eggs-and-hidden-meanings-in-stanley-kubricks-movies"
+    }
+    ]
+},
+{
+    category:"cinema",
+    id:"cine",
+    title:"Orphan Films: Cinema's Lost Souls",
+    level:[{
+        title:"the hook",
+        content:"Thousands of films are dying right now—abandoned by their owners, forgotten in vaults, disintegrating into dust. These are 'orphan films': movies with no one to care for them. Home movies, newsreels, experimental art, silent classics—entire slices of human history vanishing forever. A global movement is racing to save them before they're gone *RIP cinema*",
+        link:"https://www.smithsonianmag.com/arts-culture/orphan-films-recapturing-lost-snippets-of-history-1836676/"
+    },
+    {
+        title:"what is this shit??",
+        content:"An orphan film is any movie abandoned by its copyright holder or suffering neglect. The term covers everything from silent-era features to medical training films, propaganda reels to amateur home videos. The Orphan Film Movement, founded in the 1990s, organizes symposia and archives to preserve these works. The U.S. Copyright Office estimates millions of 'orphan works' exist with unclear ownership *that's a lot of lost media*",
+        link:"https://en.wikipedia.org/wiki/Orphan_film"
+    },
+    {
+        title:"the weird part",
+        content:"Some orphan films are bizarre time capsules: 1950s nuclear safety cartoons, Cold War propaganda, forgotten sci-fi experiments. Others are 'lost' masterpieces—like London After Midnight (1927), the most famous lost horror film, or Marie Antoinette's personal home movies. The legal limbo is maddening: no one can preserve them because copyright holders can't be found, but they rot anyway. Some archivists practice 'guerrilla preservation,' digitizing films without permission *digital piracy but for science*",
+        link:"https://silentfilm.org/silent-film-orphan-film-saving-studying-and-screening-neglected-cinema/"
+    },
+    {
+        title:"go deeper",
+        content:"Explore the Missing Movies database, which tracks lost films and helps locate materials. Attend the annual Orphan Film Symposium at NYU. Watch 'VHS Forever' documentaries about forgotten media. Or browse the Internet Archive's orphan film collections—thousands of digitized reels saved from oblivion. Every year, new 'lost' films resurface in attic discoveries and estate sales *go find a classic*",
+        link:"https://www.missingmovies.org/"
+    }
+    ]
+}
     
+    
+
 
 
 ];
@@ -200,33 +254,68 @@ let selectedHole = null;
 let currentLevel = 0;
 const surpriseButton = document.querySelector(".surprise-button");
 const rabbitResult = document.querySelector("#rabbit-result");
+const pageOverlay= document.querySelector(".page-overlay");
+const categoryArea = document.querySelector(".category-area");
+const categoryCards = document.querySelectorAll(".category-card");
+const categoryNames = ["history", "cinema", "internet"];
+
+function selectHole(hole) {
+    selectedHole = hole;
+    currentLevel = 0;
+    pageOverlay.style.opacity="1";
+    pageOverlay.style.pointerEvents="auto"
+    showLevel();
+}
 
 function showLevel() {
     const level = selectedHole.level[currentLevel];
     const isLastLevel = currentLevel === selectedHole.level.length - 1;
 
+    categoryArea.style.display = "none";
+    surpriseButton.style.display = "none";
+    rabbitResult.style.display = "block";
+
     rabbitResult.innerHTML = `
-        <h2>${selectedHole.title}</h2>
         <div class="level-box">
+
+            <button class="close-button" id="close-button">✕</button>
+
+            <h2>${selectedHole.title}</h2>
+
             <div class="level-header">
                 <h3>LEVEL ${currentLevel + 1}</h3>
-                <a href="#" class="level-link">KNOW MORE ↗</a>
+                <a href="${level.link}" 
+                   class="level-link" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    KNOW MORE ↗
+                </a>
             </div>
+
             <div class="level-content">
                 <h4>${level.title}</h4>
                 <p>${level.content}</p>
             </div>
+
             <label class="explore-check">
                 <input type="checkbox" id="level-complete">
                 I've explored this
             </label>
-            ${isLastLevel ? "" : `<button class="next-button" id="next-level" disabled>
-                LEVEL ${currentLevel + 2} →
-            </button>`}
-        </div>`;
+
+            ${
+                isLastLevel
+                    ? ""
+                    : `<button class="next-button" id="next-level" disabled>
+                        LEVEL ${currentLevel + 2} →
+                       </button>`
+            }
+
+        </div>
+    `;
 
     const levelCheckbox = document.querySelector("#level-complete");
     const nextButton = document.querySelector("#next-level");
+    const closeButton = document.querySelector("#close-button");
 
     levelCheckbox.addEventListener("change", function () {
         if (nextButton) {
@@ -240,11 +329,32 @@ function showLevel() {
             showLevel();
         });
     }
+
+    closeButton.addEventListener("click", function () {
+        closeRabbitHole();
+    });
 }
+
+function closeRabbitHole(){
+    rabbitResult.style.display="none";
+    pageOverlay.style.opacity="0";
+    pageOverlay.style.pointerEvents="none";
+    categoryArea.style.display="flex";
+    category.forEach(function (card){
+        card.style.display="flex";
+    });
+    surpriseButton.style.display="block";
+    selectedHole= null;
+    currentLevel=0;
+}
+
+
+categoryCards.forEach(function (card) {
+    card.style.display = "flex";
+});
+
 
 surpriseButton.addEventListener("click", function () {
     const randomIndex = Math.floor(Math.random() * rabbitHoles.length);
-    selectedHole = rabbitHoles[randomIndex];
-    currentLevel = 0;
-    showLevel();
+    selectHole(rabbitHoles[randomIndex]);
 });

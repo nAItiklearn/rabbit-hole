@@ -255,6 +255,7 @@ let currentLevel = 0;
 const surpriseButton = document.querySelector(".surprise-button");
 const rabbitResult = document.querySelector("#rabbit-result");
 const pageOverlay= document.querySelector(".page-overlay");
+const rabbit= document.querySelector("#rabbit");
 const categoryArea = document.querySelector(".category-area");
 const categoryCards = document.querySelectorAll(".category-card");
 const categoryNames = ["history", "cinema", "internet"];
@@ -318,6 +319,20 @@ function showLevel() {
     const closeButton = document.querySelector("#close-button");
 
     levelCheckbox.addEventListener("change", function () {
+        if (isLastLevel && levelCheckbox.checked) {
+            // Show completion state
+            const levelContent = rabbitResult.querySelector(".level-box");
+            const completionHTML = `
+                <div class="completion-state">
+                    <span class="completion-emoji">🐇✨</span>
+                    <h3>YOU FELL ALL THE WAY DOWN!</h3>
+                    <p>You've explored this rabbit hole completely.<br>The curious always find more holes to fall into.</p>
+                </div>
+            `;
+            // append after the checkbox label
+            levelCheckbox.parentElement.insertAdjacentHTML("afterend", completionHTML);
+            levelCheckbox.parentElement.style.display = "none";
+        }
         if (nextButton) {
             nextButton.disabled = !levelCheckbox.checked;
         }
@@ -335,26 +350,88 @@ function showLevel() {
     });
 }
 
-function closeRabbitHole(){
-    rabbitResult.style.display="none";
-    pageOverlay.style.opacity="0";
-    pageOverlay.style.pointerEvents="none";
-    categoryArea.style.display="flex";
-    category.forEach(function (card){
-        card.style.display="flex";
-    });
-    surpriseButton.style.display="block";
-    selectedHole= null;
-    currentLevel=0;
+function moveRabbit(direction) {
+    if (direction === "left") {
+        rabbit.style.left = "-250px";
+        rabbit.style.top = "-35px";
+        rabbit.style.transform = "scaleX(-1)";
+    }
+
+    if (direction === "right") {
+        rabbit.style.left = "180px";
+        rabbit.style.top = "-35px";
+        rabbit.style.transform = "scaleX(1)";
+    }
+
+    if (direction === "up") {
+        rabbit.style.left = "-35px";
+        rabbit.style.top = "-250px";
+        rabbit.style.transform = "scaleX(1)";
+    }
 }
 
+function closeRabbitHole() {
+    rabbitResult.style.display = "none";
+    pageOverlay.style.opacity = "0";
+    pageOverlay.style.pointerEvents = "none";
+    categoryArea.style.display = "flex";
+    categoryCards.forEach(function (card) {
+        card.style.display = "flex";
+    });
+    surpriseButton.style.display = "block";
+    rabbit.style.left = "-35px";
+    rabbit.style.top = "-35px";
+    rabbit.style.transform = "scaleX(1)";
+    selectedHole = null;
+    currentLevel = 0;
+}
 
-categoryCards.forEach(function (card) {
-    card.style.display = "flex";
+categoryCards.forEach(function (card, index) {
+    card.addEventListener("click", function () {
+        const matchingHoles = rabbitHoles.filter(function (hole) {
+            return hole.category === categoryNames[index];
+        });
+
+        if (matchingHoles.length > 0) {
+            if (categoryNames[index] === "history") {
+                moveRabbit("left");
+            }
+
+            if (categoryNames[index] === "cinema") {
+                moveRabbit("up");
+            }
+
+            if (categoryNames[index] === "internet") {
+                moveRabbit("right");
+            }
+
+            selectHole(
+                matchingHoles[
+                    Math.floor(Math.random() * matchingHoles.length)
+                ]
+            );
+        }
+    });
 });
 
-
 surpriseButton.addEventListener("click", function () {
+    rabbit.style.top = "-100px";
+
+    setTimeout(function () {
+        rabbit.style.top = "-35px";
+    }, 400);
+
     const randomIndex = Math.floor(Math.random() * rabbitHoles.length);
     selectHole(rabbitHoles[randomIndex]);
 });
+
+// ─── Dark mode toggle ───────────────────────────────────────────
+const themeButton = document.querySelector(".theme-button");
+if (themeButton) {
+    themeButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        themeButton.textContent = document.body.classList.contains("dark-mode")
+            ? "☀ Day"
+            : "🌙 Night";
+    });
+}

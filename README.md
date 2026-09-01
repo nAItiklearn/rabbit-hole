@@ -1,6 +1,6 @@
 # rabbit-hole
 
-A small interactive website for discovering weird, fascinating rabbit holes across history, cinema, and the internet
+Rabbit Hole is a pixel-art web experience that lets users discover strange topics across history, cinema, and the internet. Each rabbit hole unfolds through multiple levels, with deeper reading links and a Surprise Me mode for discovering random mysteries.
 
 Choose a destination or press *Surprise Me* and explore a topic through 4 levels:
 
@@ -12,7 +12,7 @@ Choose a destination or press *Surprise Me* and explore a topic through 4 levels
 Each level includes a source link for further exploration.
 
 ## test it live here asap-
-
+https://rabbitholeee.netlify.app/
 
 ## Features
 

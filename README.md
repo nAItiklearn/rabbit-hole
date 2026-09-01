@@ -14,7 +14,7 @@ Each level includes a source link for further exploration.
 ## test it live here asap-
 
 
-## ✨ Features
+## Features
 
 - 🎲 Random rabbit-hole selection
 - 🌲 History Woods, 🎬 Cinema Cave, 🌐 Internet
@@ -23,7 +23,7 @@ Each level includes a source link for further exploration.
 - 🔗 Sources for every level
 
 
-## 🛠️ Built With
+## Built With
 
 - HTML
 - CSS
@@ -32,13 +32,13 @@ Each level includes a source link for further exploration.
 
 No frameworks or backend are required.
 
-## 🚀 Run It
+## Run It
 
 Clone the repository and open `index.html` in a browser, or use VS Code Live Server.
 
-## 🤖 AI Use
+##  AI Use
 
-AI was used as a development aid for brainstorming, debugging, visual assets, and small implementation questions. The project concept, content structure, interactions, and core implementation were developed by me.
+AI was used in getting the infomation for rabbit holes . i used copilot for checking for errors in my code.
 
 ## 🎯 Why I Built It
 

@@ -42,4 +42,4 @@ AI was used in getting the infomation for rabbit holes . i used copilot for chec
 
 ## 🎯 Why I Built It
 
-The internet is full of fascinating things that are easy to stumble into and hard to leave.
+The internet is full of fascinating things that are easy to stumble into and hard to leave

@@ -272,6 +272,67 @@ function showLevel(){
     rabbitResult.innerHTML= `
        
         <div class="level-box">
-        `
+           <button class="close-button" id="close-button">
+           X
+          </button>
+           <h2> ${selectedHole.title}</h2>
+            <div class="level-header">
+               <h3>LEVEL ${currentLevel+1}</h3>
+               <a class="level-link" href="${level.link}" target="_blank"> KNOW MORE</a>
+            </div>
+            <div class="level-content">
+                  <h4> ${level.title}</h4>
+                  <p> ${level.content}</p>
+            </div>
+            <label class="explore-check">
+            <input type="checkbox" id="level-complete"> 
+              I have explored this
+            </label>
 
+            ${
+                lastLevel
+                ? ""
+                : `
+                    <button class="next-button" id="next-level" disabled> NEXT LEVEL 
+                    </button>
+                `
+            }
+        </div>
+    `;
+     
+    //get the buttons we created above
+    const checkbox=document.querySelector("#level-complete");
+    const nextButton=document.querySelector("#next-level");
+    const closeButton=document.querySelector("#close-button");
+
+    //checkbox
+    checkbox.addEventListener("change", function(){
+        if(nextButton){
+            nextButton.disabled=! checkbox.Checked;
+        }  // if checkbox ticked , enable next level 
+        //for final level-
+        if(lastLevel && checkbox.checked){
+            showCompletionMessage()
+        }
+    });
+
+
+}
+//completion message
+function showCompletionMessage(){
+    const box=document.querySelector(".level-box");
+    box.innerHTML+= 
+      `
+        <div class="completion-status">
+            <h3>
+              yayy you did it 
+            </h3>
+           <p> you have explored this rabbit hole completly</p>
+        </div>
+    `;
+    //remove checkbox
+    const checkbox=document.querySelector(".explore-check");
+    if(checkbox){
+        checkbox.style.display= "none"
+    }
 }

@@ -425,7 +425,7 @@ surpriseButton.addEventListener("click", function () {
     selectHole(rabbitHoles[randomIndex]);
 });
 
-// ─── Dark mode toggle ───────────────────────────────────────────
+// ─── Dark mode toggle ──
 const themeButton = document.querySelector(".theme-button");
 if (themeButton) {
     themeButton.addEventListener("click", function () {
@@ -434,4 +434,4 @@ if (themeButton) {
             ? "☀ Day"
             : "🌙 Night";
     });
-}
+}

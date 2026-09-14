@@ -157,3 +157,8 @@ button{
 .cinema-card{
     margin-top:-15px;
 }
+
+.page-overlay{
+    position:fixed;
+    
+}

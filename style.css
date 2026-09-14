@@ -1,0 +1,128 @@
+/* designing css file again lesgo */
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.home-page {
+    background-image :url("assests/home/image.png");
+    background-size: cover;
+    overflow:hidden;
+    position:relative;
+    width:100%;
+    height: 100vh;
+    background-position:center bottom;
+    background-repeat: no-repeat;
+
+
+}
+body{
+    font-size: georgia, serif;
+    background: #8B7355;
+    color:black;
+    overflow:hidden;
+
+}
+
+button{
+    font-family:georgia, serif;
+
+}
+.top-bar{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+
+}
+.logo{   /* rabbit hole logo*/
+    font-size: 24px;
+    font-weight: 900;
+    color:wheat;
+    
+       
+}
+.theme-button{
+    font-size:15px;
+    color:black;
+    color: #2d1e17;
+    cursor: pointer;
+    border: 2px solid #aaa
+
+}
+.theme-button:hover{
+    background:rgb(150, 150, 248);
+}
+
+.hero{
+    text-align:center;
+    padding-top: 70px;
+    position:relative;
+}
+
+.main-title{  
+    font-size:40px;
+    color:rgb(8, 0, 0);
+    margin-bottom:15px;
+}
+
+.search-area{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+}
+.fake-search{  /* lets dive text*/
+    
+    font-size: 20px;
+    padding:0;
+    color:white;
+    text-align:center;
+    
+}
+.surprise-button{
+    padding:0;
+    border:none;
+    background:none;
+    cursor:pointer;
+
+}
+.surprise-button img{
+    display: block;
+    width:200px
+}
+
+.category-area{
+    position:absolute;
+    top:265px;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    gap:25px;
+    align-items:flex-start;
+
+}
+.category-card{
+    width:200px;
+    padding:0;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+}
+.category-card img{
+    display:block;
+    width:100%;;
+    height:auto;
+
+}
+
+.cinema-card{
+    margin-top:-15px;
+}

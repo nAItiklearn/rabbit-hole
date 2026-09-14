@@ -42,11 +42,36 @@ button{
 
 }
 .logo{   /* rabbit hole logo*/
-    font-size: 24px;
-    font-weight: 900;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:24px;
+    font-weight:900;
     color:wheat;
-    
        
+}
+.logo img{
+    width:60px;
+    height:60px;
+    image-rendering: pixelated;
+}
+ .bunny{   /*man its so hard to add a 2d animated featue */
+    width:48px;
+    height:48px;
+    background-image: url("assests/Bunny/Walk.png");
+    background-repeat: no-repeat;
+    background-size:200px 48px;
+    image-rendering: pixelated;
+    animation:bunny-walk 0.8s steps(4) infinite;
+}
+@keyframes bunny-walk {
+    from{
+        background-position:0 0;
+
+    }
+    to{
+        background-position: -192px 0;
+    }
 }
 .theme-button{
     font-size:15px;
@@ -55,6 +80,11 @@ button{
     cursor: pointer;
     border: 2px solid #aaa
 
+}
+.theme-button img{
+    display: block;
+    width: 100px;
+    height:auto;
 }
 .theme-button:hover{
     background:rgb(150, 150, 248);
@@ -100,22 +130,23 @@ button{
 
 .category-area{
     position:absolute;
-    top:265px;
+    top:315px;
     left:0;
     width:100%;
     display:flex;
     justify-content: center;
-    gap:25px;
+    gap:35px;
     align-items:flex-start;
 
 }
 .category-card{
-    width:200px;
+    width:230px;
     padding:0;
     border:none;
     background:transparent;
     cursor:pointer;
 }
+
 .category-card img{
     display:block;
     width:100%;;

@@ -259,14 +259,14 @@ const categoryNames=["history", "cinema", "internet"];
 //opening the box for rabbit hole
 function openRabbitHole(hole){
     selectedHole =hole;  //save the hole which user selected
-    currentlevel=0;
+    currentLevel=0;
     rabbitResult.style.display="block";
     showLevel(); //display level
 }
 
 //show level function
 function showLevel(){
-    const level = selectedHole[currentlevel];  // get current level
+    const level = selectedHole.level[currentlevel];  // get current level
     const lastLevel= currentlevel === selectedHole.level.length -1;  //checking if its last level
 
     rabbitResult.innerHTML= `
@@ -308,13 +308,28 @@ function showLevel(){
     //checkbox
     checkbox.addEventListener("change", function(){
         if(nextButton){
-            nextButton.disabled=! checkbox.Checked;
+            nextButton.disabled=! checkbox.checked;
         }  // if checkbox ticked , enable next level 
         //for final level-
         if(lastLevel && checkbox.checked){
             showCompletionMessage()
         }
     });
+
+    //show next level
+    if(nextButton){
+        nextButton.addEventListener("click", function(){
+            //next
+            currentLevel+=1;
+            //show next level
+            showLevel();
+        });
+    }
+    //close
+    closeButton.addEventListener("click", function(){
+        closeRabbitHole();
+    })
+
 
 
 }
@@ -323,7 +338,7 @@ function showCompletionMessage(){
     const box=document.querySelector(".level-box");
     box.innerHTML+= 
       `
-        <div class="completion-status">
+        <div class="completion-state">
             <h3>
               yayy you did it 
             </h3>
@@ -333,6 +348,60 @@ function showCompletionMessage(){
     //remove checkbox
     const checkbox=document.querySelector(".explore-check");
     if(checkbox){
-        checkbox.style.display= "none"
+        checkbox.style.display= "none";
     }
+
 }
+//close rabbit hole funtion
+function closeRabbitHole(){
+    const pageOverlay = document.querySelector(".page-overlay");
+    rabbitResult.style.display="none";
+    //hide overlay;
+    pageOverlay.style.display="none";
+    //reset 
+    selectedHole = null;
+    //reset level to 0;
+    currentLevel=0;
+}
+//category buttons
+
+categoryCards.forEach(function(card, index){
+    card.addEventListener("click", function(){
+        //get the category
+        const category= categoryNames[index];
+
+        //find topics of this category using filter
+        const matchingHoles=rabbitHoles.filter(function(hole){
+            return hole.category ===category;
+        });
+        if(matchingHoles.length ===0){
+            return;
+        }
+        //random hole
+        const randomNumber= Math.floor(Math.random() * matchingHoles.length);
+        const selected =matchingHoles[randomNumber];
+
+        //open
+        openRabbitHole(selected);
+    });
+});
+
+//surprise 
+
+surpriseButton.addEventListener("click", function(){
+    const randomNumber=Math.floor(Math.random()*rabbitHoles.length);
+
+    //get the randome hole
+    const selected= rabbitHoles[randomNumber];
+
+    //open
+    openRabbitHole(selected);
+})
+
+
+//press esc to close
+document.addEventListener("keydown", function(event){
+    if(event.key==="Escape"&& selectedHole!==null){
+        closeRabbitHole();
+    }
+});

@@ -88,7 +88,7 @@ const rabbitHoles = [
         title:"cicada 3301",
         level:[{
             title:"the hook",
-            content:"In 2012, a cryptic message appeared on 4chan:'We are looking for highly intelligent individuals(like the developer of this website).'What followed was a global scavenger hunt involving cryptography,steganography, real world Treasure hunts, and phone calls from unknown numbers.The prize? Recruiment into.. something. No one knows what",
+            content:"In 2012, a cryptic message appeared on 4chan : We are looking for highly intelligent individuals(like the developer of this website).'What followed was a global scavenger hunt involving cryptography,steganography, real world Treasure hunts, and phone calls from unknown numbers.The prize? Recruiment into.. something. No one knows what",
             link:"//www.wamc.org/2014-01-05/the-internets-cicada-a-mystery-without-an-answer"
         },
         {
@@ -246,14 +246,13 @@ const rabbitHoles = [
 ];
 
 let selectedHole=null;
-let currentHole=0;
+let currentLevel=0;
 
 //get elements from index.html
 const surpriseButton=document.querySelector(".surprise-button");
 const rabbitResult=document.querySelector("#rabbit-result");
 const categoryCards= document.querySelectorAll(".category-card");
-const themeButton=document.querySelector(".theme-button");
-
+const pageOverlay = document.querySelector(".page-overlay");
 const categoryNames=["history", "cinema", "internet"];
 
 //opening the box for rabbit hole
@@ -261,13 +260,14 @@ function openRabbitHole(hole){
     selectedHole =hole;  //save the hole which user selected
     currentLevel=0;
     rabbitResult.style.display="block";
+    pageOverlay.style.display = "block";
     showLevel(); //display level
 }
 
 //show level function
 function showLevel(){
-    const level = selectedHole.level[currentlevel];  // get current level
-    const lastLevel= currentlevel === selectedHole.level.length -1;  //checking if its last level
+    const level = selectedHole.level[currentLevel];  // get current level
+    const lastLevel= currentLevel === selectedHole.level.length -1;  //checking if its last level
 
     rabbitResult.innerHTML= `
        

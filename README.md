@@ -1,45 +1,18 @@
-# rabbit-hole
+# rabbit hole
 
-Rabbit Hole is a pixel-art web experience that lets users discover strange topics across history, cinema, and the internet. Each rabbit hole unfolds through multiple levels, with deeper reading links and a Surprise Me mode for discovering random mysteries.
+Heloz. **rabbit hole**  in a fun , interactive website where you can learn about some random things whiich would help you to larp in class that you have knowleddge in many fields .
 
-Choose a destination or press *Surprise Me* and explore a topic through 4 levels:
+I built this for pixl, Hack club
 
-- 🪝 The Hook
-- 📖 What We Know
-- 👁️ The Weird Part
-- 🕳️ Go Deeper
-
-Each level includes a source link for further exploration.
-
-## test it live here asap-
+## Live website
+try it yourself-
 https://rabbitholeee.netlify.app/
 
-## Features
+## features
 
-- 🎲 Random rabbit-hole selection
-- 🌲 History Woods, 🎬 Cinema Cave, 🌐 Internet
-- 🐇 Animated pixel rabbit navigation
-- 📖 4-level exploration system
-- 🔗 Sources for every level
+**pick a category** you can choose between history , cinema or internet .
+**surprise me** if you are not sure what you wanna learn , just click the surprise me button and you'll get a good topic to start
+**level progression** there are levels , so that you could know the different stages of that specific topic 
+**know more** - if you want to learn more about a specific stage of a topic , just click on know more, you will find the resource for  that.
 
-
-## Built With
-
-- HTML
-- CSS
-- Vanilla JavaScript
-
-
-No frameworks or backend are required.
-
-## Run It
-
-Clone the repository and open `index.html` in a browser, or use VS Code Live Server.
-
-##  AI Use
-
-AI was used in getting the infomation for rabbit holes . i used copilot for checking for errors in my code.
-
-## 🎯 Why I Built It
-
-The internet is full of fascinating things that are easy to stumble into and hard to leave
+thanks for checking out my project!!

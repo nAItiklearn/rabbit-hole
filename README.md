@@ -11,8 +11,33 @@ https://rabbitholeee.netlify.app/
 ## features
 
 **pick a category** you can choose between history , cinema or internet .
+
+![Main Image](./assets/main-image.png)
+
 **surprise me** if you are not sure what you wanna learn , just click the surprise me button and you'll get a good topic to start
 **level progression** there are levels , so that you could know the different stages of that specific topic 
 **know more** - if you want to learn more about a specific stage of a topic , just click on know more, you will find the resource for  that.
 
-thanks for checking out my project!!
+![Completion Image](./assets/completion-image.png)
+
+**exit hole** - press escape key to exit the hole .
+
+
+## Getting Started
+
+Follow these steps to run Rabbit Hole locally.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/nAItiklearn/rabbit-hole.git
+2. Navigate into the project
+cd rabbit-hole
+3. Run the project
+```
+You can simply open index.html in your browser.(no additional dependencies or installation req).
+
+Alternatively, if you use VS Code, you can run the project using the Live Server extension:
+
+
+### thanks for checking out my project!!

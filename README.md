@@ -12,13 +12,13 @@ https://rabbitholeee.netlify.app/
 
 **pick a category** you can choose between history , cinema or internet .
 
-![Main Image](./assets/main-image.png)
+![Main Image](./assests/main-image.png)
 
 **surprise me** if you are not sure what you wanna learn , just click the surprise me button and you'll get a good topic to start
 **level progression** there are levels , so that you could know the different stages of that specific topic 
 **know more** - if you want to learn more about a specific stage of a topic , just click on know more, you will find the resource for  that.
 
-![Completion Image](./assets/completion-image.png)
+![Completion Image](./assests/completion-image.png)
 
 **exit hole** - press escape key to exit the hole .
 
